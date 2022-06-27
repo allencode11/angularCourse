@@ -12,7 +12,7 @@ import { ModalComponent } from './modal/modal.component';
     CommonModule,
   ],
   exports: [
-    ModalComponent
+    ModalComponent,
   ]
 })
 export class SharedModule { }

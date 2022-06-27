@@ -10,10 +10,10 @@ import { SharedModule } from '../shared/shared.module';
   ],
   exports: [
     AuthModalComponent,
-    SharedModule
   ],
   imports: [
     CommonModule,
+    SharedModule
   ],
 })
 export class UserModule { }
