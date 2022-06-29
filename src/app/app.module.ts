@@ -9,8 +9,7 @@ import { NavComponent } from './nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
-  ],
+    NavComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
