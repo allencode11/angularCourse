@@ -9,13 +9,19 @@ interface IModal {
   providedIn: 'root'
 })
 export class ModalService {
-  private modals: IModal[] = [];
+  public modals: IModal[] = [];
 
   constructor() { };
 
   register(id: string) {
     this.modals.push({ id, visible: false})
-  }
+  };
+
+  unregister(id: string): void {
+    this.modals = this.modals.filter(el => el.id !== id)
+
+  };
+
   isModalOpen(id: string): boolean {
     return Boolean(this.modals.find(element => element.id === id)?.visible);
   };
